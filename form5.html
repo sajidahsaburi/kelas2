@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+<link href="css/day2.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<!--Step 1 aka page 1-->
+<div data-role="page" id="page1">
+	<!--content-->
+	<div role="main" class="ui-content" style="text-align:center">
+		<h1>Selamat Datang</h1>
+		<img src="gambar/logo.png"/>
+		<h3>Web Mobile Rasmi HRMIS</h3>
+		<div data-role="collapsible-set">
+		<div data-role="collapsible" data-inset"false">
+		<h3>Info HRMIS</h3>
+		<ul data-role="listview">
+			<li><a href="#page2">Visi & Misi</a></li>
+			<li><a href="#page3">Piagam Pelanggan</a></li>
+			<li><a href="#page4">Direktori</a></li>
+		</ul>
+		</div>
+		</div>
+		<!--<div data-role="collapsible" data-inset="false">
+		<div data-role="collapsible" data-inset="false">
+		<div data-role="collapsible" data-inset="false">
+		<div data-role="collapsible" data-inset="false">
+		<div data-role="collapsible" data-inset="false">-->
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Hak Cipta SD.BPM.JPA © 2014 | Web Mobile rasmi HRMIS</4>
+	</div>
+</div> <!--end of page 1-->
+<!--Step 1 aka page 2-->
+<div data-role="page" id="page2">
+	<!--header-->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Kembali">
+		<h3>Misi Dan Visi</h3>
+	</div>
+	<!--content-->
+	<div role="main" class="ui-content">
+		<h2>Visi</h2>
+		Menjadikan HRMIS aplikasi unggul dalam pengurusan sumber manusia sektor awam bertaraf dunia melalui kecanggihan ICT selaras dengan wawasan kerajaan.
+		
+		<h2>Misi</h2>
+		<p>Memastikan semua agensi dalam sektor awam melaksanakan Sistem Maklumat Pengurusan Sumber Manusia (HRMIS) selaras dengan visi sumber manusia Perkhidmatan Awam dan matlamat Kerajaan Elektronik.</p>
+		<p>Memastikan HRMIS sentiasa relevan dalam pengurusan sumber manusia sektor awam melalui penambahbaikan berterusan.</p>
+    </div>
+	<!--popup-->
+	<a href="#pop1" class="ui-btn ui-btn-inline" data-transition="pop" data-rel="popup">Objektif</a>
+	<div data-role="popup" id="pop1" data-dismissible="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div data-role="header">
+		<h3>Objektif</h3>
+		</div>
+
+	<div role="main" class="ui-content">
+		<ol>
+		<li>Membolehkan perancangan tenaga kerja dan penentuan saiz perkhidmatan awam yang berkesan melalui maklumat pengurusan sumber manusia;</li>
+		<li>Mengautomasikan proses operasi pengurusan sumber manusia;</li>
+		<li>Membangunkan maklumat sumber manusia yang bersepadu dan kemas kini untuk tujuan perancangan sumber manusia yang berkesan;</li>
+		<li>Memudahkan komunikasi dan integrasi secara horizontal, penyelarasan proses sumber manusia dan capaian melalui single window;</li>
+		<li>Menyumbang ke arah pewujudan persekitaran paperless; dan</li>
+		<li>Menyediakan satu sistem maklumat sumber manusia yang terbuka dan fleksibel serta kemas kini bagi memenuhi keperluan pengurusan di pelbagai peringkat agensi.</li></ol>
+		<a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Tutup</a>
+
+		</div>
+	</div>
+<a href="#page3" class="ui-btn" data-transition="slide">Piagam Pelanggan</a>
+	<!--footer-->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page3" data-icon="grid">Piagam Pelanggan</a></li>
+				<li><a href="#" data-icon="star" class="ui-btn-active ui-state-persist">Visi & Misi</a></li>
+				<li><a href="#page4" data-icon="gear">Direktori</a></li>
+			</ul>
+		</div>
+	</div>
+</div> <!--End of page2-->
+<!--Step 1 aka page 3-->
+<div data-role="page" id="page3">
+	<!--header-->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Kembali">
+		<h3>Piagam Pelanggan</h3>
+	</div>
+	<!--content-->
+	<div role="main" class="ui-content">
+		<h2>Piagam Pelanggan</h2>
+		<img src="gambar/piagam.jpg" style="width:450px; height:500px">
+    </div>
+	<!--footer-->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">Piagam Pelanggan</a></li>
+				<li><a href="#page2" data-icon="star">Visi & Misi</a></li>
+				<li><a href="#page4" data-icon="gear">Direktori</a></li>
+			</ul>
+		</div>
+	</div>
+</div> <!--End of page3-->
+<!--Step 1 aka page 4-->
+<div data-role="page" id="page4">
+	<!--header-->
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Kembali">
+		<h3>Direktori</h3>
+	</div>
+	<!--content-->
+	<div role="main" class="ui-content">
+		<h3>Bahagian Pengurusan Maklumat</h3>
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Taipkan Nama">
+			<li>
+				<img src="gambar/putri.tajudin.jpg" style="width:200px">
+				<strong> Nama : </strong> Putri Nooerafedah Binti Megat Tajudin
+				<p><strong> Jawatan : </strong> Ketua Penolong Pengarah</p>
+				<p><strong> Gelaran : </strong> KPP(M)PL</p>
+				<p>
+				<a href="tel=+60383164035" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a>
+				<a href="sms://60133422264" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline"> SMS </a>
+				<a href="mailto:putri.tajudin@jpa.gov.my" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline"> Pesanan Email </a>
+				</p>
+			</li>
+			<li>
+				<img src="gambar/liana.yusof.jpg" style="width:200px">
+				<strong> Nama : </strong> Nurul Liana Binti Md Yusof
+				<p><strong> Jawatan : </strong> Penolong Pegawai Teknologi Maklumat</p>
+				<p><strong> Gelaran : </strong> PPTM(M)TR6</p>
+			</li>
+		</ul>
+    </div>
+	<!--footer-->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page3" data-icon="grid">Piagam Pelanggan</a></li>
+				<li><a href="#page2" data-icon="star">Visi & Misi</a></li>
+				<li><a href="#" data-icon="gear" class="ui-btn-active ui-state-persist">Direktori</a></li>
+			</ul>
+		</div>
+	</div>
+</div> <!--End of page4-->
+</body>
+</html>
+
+
+
+
+			
